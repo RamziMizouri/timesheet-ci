@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: tn.esprit.spring.service.DepartementServiceImplTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 8.033 s <<< FAILURE! - in tn.esprit.spring.service.DepartementServiceImplTest
+testgetdepartement  Time elapsed: 0.27 s  <<< ERROR!
+java.util.NoSuchElementException: No value present
+	at tn.esprit.spring.service.DepartementServiceImplTest.testgetdepartement(DepartementServiceImplTest.java:54)
+
+testremoveRendezVousById  Time elapsed: 0.008 s  <<< ERROR!
+org.springframework.dao.EmptyResultDataAccessException: No class tn.esprit.spring.entities.Departement entity with id 9 exists!
+	at tn.esprit.spring.service.DepartementServiceImplTest.testremoveRendezVousById(DepartementServiceImplTest.java:62)
+
+testgetallDepartements  Time elapsed: 0.419 s  <<< FAILURE!
+java.lang.AssertionError: expected:<7> but was:<8>
+	at tn.esprit.spring.service.DepartementServiceImplTest.testgetallDepartements(DepartementServiceImplTest.java:35)
+
