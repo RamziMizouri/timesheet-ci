@@ -19,12 +19,11 @@ public class DepartementServiceImplTest {
 		@Autowired
 		IDepartementService ids; 
 	
-		@Test
+		/*@Test
 		public void testgetallDepartements() {
 			List<Departement> listDeps = ids.getallDepartements(); 
-
 			Assert.assertEquals(7L, listDeps.size());
-		}
+		}*/
 	
 		@Test
 		public void testaddDepartement()  {
