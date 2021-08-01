@@ -18,13 +18,7 @@ public class DepartementServiceImplTest {
 
 		@Autowired
 		IDepartementService ids; 
-	
-		/*@Test
-		public void testgetallDepartements() {
-			List<Departement> listDeps = ids.getallDepartements(); 
-			Assert.assertEquals(7L, listDeps.size());
-		}*/
-	
+		
 		@Test
 		public void testaddDepartement()  {
 			Departement d = new Departement("informatique"); 
@@ -37,20 +31,7 @@ public class DepartementServiceImplTest {
 			Departement d = new Departement("informatique"); 
 			Departement departementUpdated = ids.updateDepartement(d); 
 			Assert.assertEquals(d.getName(), departementUpdated.getName());
-		}
-	
-		/*@Test
-		public void testgetdepartement() {
-			Departement departementRetrieved = ids.getDepartement(11); 
-			Assert.assertEquals(11L, departementRetrieved.getId());
-		}
-		
-		@Test
-		public void testremoveRendezVousById() {			
-			ids.removeDepartementById(12);
-			Assert.assertNull(ids.getDepartement(12));
-		}*/
-		
+		}	
  
  
 }
